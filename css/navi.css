@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 971px;
+	margin: 0 auto; /* 가운데 정렬 */
+}
+
+h1 {
+	margin: 0 0 170px 0;
+}
+
+table {
+	width: 100%;
+	border-collapse : collapse;
+	font-size: 12px;
+	line-height: 24px;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.navi {
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding-right: 70px;
+}
+
+.navi > li {
+	float: right;
+}
+
+.navi > li > a {
+	padding: 10px 50px;
+}
+
+li a {
+	background-color: #39f;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+li a:hover {
+	background-color:#33f;
+	color: white;
+}
+
+/* 하위메뉴 감추기 */
+.navi li ul {
+	display: none;
+}
+
+/* 마우스 위치에 따라 하위메뉴 나타냄 */
+.navi li:hover ul {
+	display: block;
+}
+
+/* 투명도 */
+.navi li ul {
+	opacity: 50;
+}
+
+/* 변경 시간 1초 */
+.navi li:hover ul {
+	opacity: 1;
+    transition: all 1s;
+}
+
+/* a태그 트랜지션 설정 */
+.navi li a{
+	transition: all 0.5s;
+}
