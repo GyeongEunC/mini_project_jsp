@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 #wrap {
-	margin: 0 auto;		/* 가운데 정렬 */
-	padding-top: 95px;
+	margin: 0 auto; /* 가운데 정렬 */
+	padding-top: 88px;
 	padding-bottom: 100px;
 }
 
@@ -10,23 +10,23 @@ h2 {
 	color: purple;
 }
 
-.tt > table {
+.tt>table {
 	width: 100%;
 	font-size: 12px;
-	line-height: 40px;	/* 줄간격 */
+	line-height: 40px; /* 줄간격 */
 	border-collapse: collapse;
 }
 
-.tt > table > tr, td{
+.tt>table>tr, td {
 	margin: 0 auto;
-	padding: 15px 25px 0px 12px;
+	padding: 5px 25px 0px 12px;
 	font-size: 20px;
 	color: #ff80c0;
 }
 
 img {
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 }
 
 #wrap {
@@ -52,3 +52,36 @@ input[type=password] {
 	border-radius: 15px;
 	background-color: #ff8080;
 }
+
+select {
+	width: 180px;
+	height: 22px;
+	border: 0;
+	border-radius: 15px;
+	background-color: #ff8080;
+}
+
+select > option {
+	border: 0;
+	border-radius: 15px;
+	background-color: #ffa8a8;
+}
+
+input[type=submit] {
+	width: 70px;
+	height: 30px;
+	background-color: #FF6A00;
+	border: 1px solid #FFFFFF;
+	border-radius: 30px;
+	box-shadow: 5px 5px 5px #ff8080;
+}
+
+input[type=reset] {
+	width: 70px;
+	height: 30px;
+	background-color: #FF6A00;
+	border: 1px solid #FFFFFF;
+	border-radius: 30px;
+	box-shadow: 5px 5px 5px #ff8080;
+}
+
