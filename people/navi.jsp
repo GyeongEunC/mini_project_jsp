@@ -48,7 +48,7 @@ li a:hover {
 }
 /* 투명도 */
 .navi li ul {
-	opacity: 50;
+	opacity: 0.5;
 }
 /* 변경 시간 1초 */
 .navi li:hover ul {
@@ -60,7 +60,21 @@ li a:hover {
 	transition: all 0.5s;
 }
 
+.image img {
+	float: left;
+	width: 175px;
+	height: 175px;
+	padding-top: 200px;
+	padding-left: 49px;
+}
+
 </style>
+
+<nav>
+	<ul class="image">
+		<img src="../img/love.png">
+	</ul>
+</nav>
 
 <nav>
 	<ul class="navi">
@@ -82,9 +96,7 @@ li a:hover {
 		<li><a href="#"> 마이페이지 </a></li>
 	</ul>
 </nav>
-
 <body>
 
 </body>
-
 </html>
