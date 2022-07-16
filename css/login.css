@@ -3,7 +3,7 @@
 #wrap {
 	margin: 0 auto; /* 가운데 정렬 */
 	padding-top: 88px;
-	padding-bottom: 100px;
+	padding-bottom: 208px;
 }
 
 h2 {
@@ -61,7 +61,7 @@ select {
 	background-color: #ff8080;
 }
 
-select > option {
+select>option {
 	border: 0;
 	border-radius: 15px;
 	background-color: #ffa8a8;
@@ -85,3 +85,32 @@ input[type=reset] {
 	box-shadow: 5px 5px 5px #ff8080;
 }
 
+input[type=button] {
+	width: 100px;
+	height: 30px;
+	background-color: #FF6A00;
+	border: 1px solid #FFFFFF;
+	border-radius: 30px;
+	box-shadow: 5px 5px 5px #ff8080;
+}
+
+.image img {
+	float: left;
+	width: 175px;
+	height: 205px;
+	/* 	padding-top: 139px; */
+	padding-left: 99px;
+	margin: 0 auto;
+}
+
+#main_footer {
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	background-color: #ffff80;
+	padding: 3px;
+	border: 1px solid black;
+	text-align: center; /* 글자 정렬 */
+}
