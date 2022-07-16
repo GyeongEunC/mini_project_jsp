@@ -60,42 +60,29 @@ li a:hover {
 	transition: all 0.5s;
 }
 
-.image img {
-	float: left;
-	width: 175px;
-	height: 175px;
-	padding-top: 200px;
-	padding-left: 49px;
-}
-
 </style>
 
 <nav>
-	<ul class="image">
-		<img src="../img/love.png">
-	</ul>
-</nav>
-
-<nav>
 	<ul class="navi">
-		<li><a href="#"> HOME </a></li>
-		<li><a href="#"> 로그인 </a>
+		<li><a href="#" onclick="location.href='http://localhost:8181/web_project/people/home.jsp'"> HOME </a></li>
+		<li><a href="#" onclick="location.href='http://localhost:8181/web_project/index.jsp'"> 로그인 </a>
 			<ul>
 				<li><a href="#"> 회원가입 </a></li>
 				<li><a href="#"> 아이디 찾기 </a></li>
 				<li><a href="#"> 비밀번호 찾기 </a></li>
 			</ul>
 		</li>
-		<li><a href="#"> 게시판 </a>
+		<li><a href="#" onclick="location.href='http://localhost:8181/web_project/boardList.do'"> 게시판 </a>
 			<ul>
 				<li><a href="#"> Q & A </a></li>
 				<li><a href="#"> 게시판 목록 </a></li>
 				<li><a href="#"> 글쓰기 </a></li>
 			</ul>
 		</li>
-		<li><a href="#"> 마이페이지 </a></li>
+		<li><a href="#" onclick="location.href='http://localhost:8181/web_project/people/mypage.jsp'"> 마이페이지 </a></li>
 	</ul>
 </nav>
+
 <body>
 
 </body>
