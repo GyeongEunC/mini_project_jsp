@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+#wrap {
+	margin: 0 auto; /* 가운데 정렬 */
+	padding-top: 88px;
+	padding-bottom: 300px;
+}
+
+h2 {
+	color: purple;
+}
+
+.tt {
+	border: none;
+}
+
+.tt>table {
+	width: 100%;
+	font-size: 12px;
+	line-height: 40px; /* 줄간격 */
+	border-collapse: collapse;
+}
+
+.tt>table>tr, td {
+	margin: 0 auto;
+	padding: 5px 25px 0px 12px;
+	font-size: 20px;
+	color: #ff80c0;
+}
+
+img {
+	width: 16px;
+	height: 16px;
+}
+
+#wrap {
+	background-image: url('../img/rainbow.jpg');
+	opacity: 0.6;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: bottom;
+}
+
+input[type=text] {
+	width: 180px;
+	height: 22px;
+	border: 0;
+	border-radius: 15px;
+	background-color: #ff8080;
+	text-align: center;
+}
+
+input[type=password] {
+	width: 180px;
+	height: 22px;
+	border: 0;
+	border-radius: 15px;
+	background-color: #ff8080;
+}
+
+select {
+	width: 180px;
+	height: 22px;
+	border: 0;
+	border-radius: 15px;
+	background-color: #ff8080;
+}
+
+select>option {
+	border: 0;
+	border-radius: 15px;
+	background-color: #ffa8a8;
+}
+
+input[type=submit] {
+	width: 70px;
+	height: 30px;
+	background-color: #FF6A00;
+	border: 1px solid #FFFFFF;
+	border-radius: 30px;
+	box-shadow: 5px 5px 5px #ff8080;
+}
+
+input[type=reset] {
+	width: 70px;
+	height: 30px;
+	background-color: #FF6A00;
+	border: 1px solid #FFFFFF;
+	border-radius: 30px;
+	box-shadow: 5px 5px 5px #ff8080;
+}
+
+.image img {
+	float: left;
+	width: 175px;
+	height: 175px;
+	padding-top: 200px;
+	padding-left: 49px;
+}
