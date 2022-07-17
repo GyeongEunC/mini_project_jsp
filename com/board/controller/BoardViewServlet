@@ -1,0 +1,54 @@
+package com.board.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.board.db.BoardDAO;
+import com.board.db.BoardVO;
+
+
+
+/**
+ * Servlet implementation class BoardViewServlet
+ */
+@WebServlet("/boardView.do")
+public class BoardViewServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String url = "board/boardView.jsp";
+		
+		String num = request.getParameter("num");
+		BoardDAO bDao = BoardDAO.getInstance();
+		
+		BoardVO bVo = bDao.selectOneBoardByNum(num);
+		
+		bDao.updateReadCount(num);
+		
+		request.setAttribute("board", bVo);
+		
+		RequestDispatcher rd = request.getRequestDispatcher(url);
+		rd.forward(request, response);
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String url = "board/boardView.jsp";
+		
+		RequestDispatcher rd = request.getRequestDispatcher(url);
+		rd.forward(request, response);
+	}
+
+}
